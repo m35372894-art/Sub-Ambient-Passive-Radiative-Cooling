@@ -1,26 +1,86 @@
-
-v -2.0000 0.0000 -2.0000
-v 2.0000 0.0000 -2.0000
-v 2.0000 2.0000 -2.0000
-v -2.0000 2.0000 -2.0000
-v -2.0000 0.0000 2.0000
-v 2.0000 0.0000 2.0000
-v 2.0000 2.0000 2.0000
-v -2.0000 2.0000 2.0000
-v 0.0000 3.2000 -2.1000
-v 0.0000 3.2000 2.1000
-v -2.3000 1.9000 -2.1000
-v -2.3000 1.9000 2.1000
-v 2.3000 1.9000 -2.1000
-v 2.3000 1.9000 2.1000
-
-# 2. Грани 3D-объекта
-f 1 2 3 4
-f 5 6 7 8
-f 1 5 8 4
-f 2 6 7 3
-f 1 2 6 5
-f 4 8 10 9
-f 3 7 10 9
-f 11 12 10 9
-f 13 14 10 9
+solid pdrc_cooling_model
+  facet normal 0 0 -1
+    outer loop
+      vertex -2.0 0.0 -2.0
+      vertex 2.0 0.0 -2.0
+      vertex 2.0 2.0 -2.0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -2.0 0.0 -2.0
+      vertex 2.0 2.0 -2.0
+      vertex -2.0 2.0 -2.0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -2.0 0.0 2.0
+      vertex 2.0 0.0 2.0
+      vertex 2.0 2.0 2.0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -2.0 0.0 2.0
+      vertex 2.0 2.0 2.0
+      vertex -2.0 2.0 2.0
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -2.0 0.0 -2.0
+      vertex -2.0 0.0 2.0
+      vertex -2.0 2.0 2.0
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -2.0 0.0 -2.0
+      vertex -2.0 2.0 2.0
+      vertex -2.0 2.0 -2.0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 2.0 0.0 -2.0
+      vertex 2.0 0.0 2.0
+      vertex 2.0 2.0 2.0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 2.0 0.0 -2.0
+      vertex 2.0 2.0 2.0
+      vertex 2.0 2.0 -2.0
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -2.0 2.0 -2.0
+      vertex 0.0 3.2 -2.1
+      vertex 0.0 3.2 2.1
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -2.0 2.0 -2.0
+      vertex 0.0 3.2 2.1
+      vertex -2.0 2.0 2.0
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 2.0 2.0 -2.0
+      vertex 0.0 3.2 -2.1
+      vertex 0.0 3.2 2.1
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 2.0 2.0 -2.0
+      vertex 0.0 3.2 2.1
+      vertex 2.0 2.0 2.0
+    endloop
+  endfacet
+endsolid pdrc_cooling_model
