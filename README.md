@@ -29,3 +29,13 @@ print(cache.get("a"))  # Output: 1
 
 cache.put("c", 3)      # Evicts key "b" (least recently used)
 print(cache.get("b"))  # Output: None
+# 🧊 Go 3D Model Generator
+
+A lightweight, zero-dependency 3D model generator written in Go. 
+
+It procedurally generates 3D geometry (such as roof panels and radiative cooling sheets) and exports them directly into standard `.obj` files that GitHub can render natively in 3D!
+
+## 🚀 How to Generate the 3D Model
+
+```bash
+go run main.go
